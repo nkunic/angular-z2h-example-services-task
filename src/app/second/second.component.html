@@ -3,7 +3,10 @@
   <div class="row">
     <div class="col-6">
       <div class="form-group">
-        <select class="form-control" name="shape" [(ngModel)]="shape">
+        <select 
+        class="form-control" 
+        name="shape" 
+        [(ngModel)]="shape">
           <option value="">Select Shape</option>
           <option value="square">Square</option>
           <option value="rectangle">Rectangle</option>
@@ -13,7 +16,10 @@
     </div>
     <div class="col-6">
       <div class="form-group">
-        <select class="form-control" name="color" [(ngModel)]="color">
+        <select 
+        class="form-control" 
+        name="color" 
+        [(ngModel)]="color">
           <option value="">Select Color</option>
           <option value="yellow">Yellow</option>
           <option value="brown">Brown</option>
@@ -28,7 +34,7 @@
     (click)="drawShape()"
     [disabled]="shape.length === 0 || color.length === 0"
   >
-    Draw
+    Draw shape
   </button>
 
   <div class="row">
