@@ -8,11 +8,14 @@ import { ShapesService } from '../shapes.service';
 export class SecondComponent {
   shape = '';
   color = '';
-  shapeClass = '';
+  shapeColorClass = '';
 
   constructor(private shapesService: ShapesService) {}
 
   drawShape() {
-    this.shapeClass = this.shapesService.getClassName(this.shape, this.color);
+    this.shapeColorClass = this.shapesService.getClassName(
+      this.shape,
+      this.color
+    );
   }
 }
