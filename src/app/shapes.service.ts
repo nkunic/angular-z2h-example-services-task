@@ -8,7 +8,7 @@ export class ShapesService {
   constructor() { }
 
   getClassName(shape, color) {
-    return shape + '-' + color;
+    return shape + ' ' + color;
   }
 
 }
